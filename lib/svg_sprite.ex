@@ -148,6 +148,10 @@ defmodule SvgSprite do
     content_tag(:svg, use_tag(family, icon), opts)
   end
 
+  defp use_tag(@base_path <> _rest = path, icon) do
+    content_tag(:use, "", href: path <> "#" <> icon)
+  end
+
   defp use_tag(family, icon) do
     content_tag(:use, "", href: @base_path <> "/" <> family <> ".svg#" <> icon)
   end
