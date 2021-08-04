@@ -2,7 +2,7 @@ defmodule SvgSprite.MixProject do
   use Mix.Project
 
   @repo_url "https://github.com/oliverandrich/svg_sprite"
-  @version "0.1.1"
+  @version "0.1.2"
 
   def project do
     [
