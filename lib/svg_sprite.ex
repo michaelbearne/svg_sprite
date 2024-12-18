@@ -5,9 +5,9 @@ defmodule SvgSprite do
              |> String.split("<!-- MDOC !-->")
              |> Enum.fetch!(1)
 
-  import Phoenix.HTML.Tag
+  import PhoenixHTMLHelpers.Tag
 
-  @base_path Application.get_env(:svg_sprite, :base_path, "/images/")
+  @base_path Application.compile_env(:svg_sprite, :base_path, "/images/")
              |> String.trim_trailing("/")
 
   @doc """

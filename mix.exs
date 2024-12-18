@@ -51,7 +51,8 @@ defmodule SvgSprite.MixProject do
 
   defp deps do
     [
-      {:phoenix_html, "~> 2.14 or ~> 3.0"},
+      {:phoenix_html, "~> 4.1"},
+      {:phoenix_html_helpers, "~> 1.0"},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false, optional: true},
       {:ex_doc, ">= 0.0.0", only: [:release, :dev], runtime: false}
     ]
